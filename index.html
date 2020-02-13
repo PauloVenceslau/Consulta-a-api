@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<title>Busca de raça em API</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" href="estilo/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Lemonada|Odibee+Sans|Raleway|Roboto|Sriracha&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ </style>
+</head>
+<body>
+<div class="container">
+	<div class="demo-image"></div>
+	<div id="te" class="centered"></div>
+</div>
+<center>
+<h3>Buscador e gerador por raça de cachorro</h3>
+<div class="code-wrapper breeds">
+	<input type="text" value="" id="myInput" placeholder="Digite a raça:">
+	<select class="dog-selector"></select>
+  <button class="block gerar" type="button1" id="myBtn">Gerar</button>	
+</div>
+<div class="formata" style="margin:5px">
+Cores:
+  <select class="cores">Cores: 
+    <option value="0" onclick="altCor(0)">escolha uma cor...</option>
+    <option value="1" onclick="altCor(1)">Vermelho</option>
+    <option value="2" onclick="altCor(2)">Azul</option>
+    <option value="3" onclick="altCor(3)">Branco</option>
+    <option value="4" onclick="altCor(4)">Cinza</option>
+    <option value="5" onclick="altCor(5)">Verde</option>
+  </select>
+Fontes:
+  <select class="fontes"> 
+    <option value="0" onclick="altFonte(0)">escolha uma fonte...</option>
+    <option value="1" onclick="altFonte(1)">Sriracha</option>
+    <option value="2" onclick="altFonte(2)">Lemonada</option>
+    <option value="3" onclick="altFonte(3)">Roboto</option>
+    <option value="4" onclick="altFonte(4)">Odibee</option>
+    <option value="5" onclick="altFonte(5)">Raleway</option>
+  </select>
+</div>
+  <button class="block salva" type="button" onclick="Salvar()">salvar</button>
+</center>
+	<script src="script/script.js"></script>
+
+</body>
+</html>
